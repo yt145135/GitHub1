@@ -30,4 +30,5 @@ public class SpringbootdemoApplication {
 		factory.setMaxRequestSize("102400KB");
 		return factory.createMultipartConfig();
 	}
+
 }

@@ -16,6 +16,7 @@
     <p>文件2：<input type="text" name="name" /></p>
     <p>文件3：<input type="file" name="file" /></p>
     <p><input type="submit" value="上传" /></p>
+
 </form>
 </body>
 </html>

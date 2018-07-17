@@ -17,6 +17,7 @@ public class HelloController {
 
     private static Logger logger= LoggerFactory.getLogger(HelloController.class);
 
+
     @Value("${my.name}")
     private String Name;
 

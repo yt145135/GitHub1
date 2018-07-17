@@ -40,6 +40,7 @@ public class FileUpLoadController {
                 if(!targetFile.exists()){
                     targetFile.mkdirs();
                 }
+
                 FileOutputStream out = new FileOutputStream(filePath+name);
                 out.write(file.getBytes());
                 out.flush();
