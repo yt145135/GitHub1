@@ -22,6 +22,7 @@ public class SpringbootdemoApplication {
 	 */
 	@Bean
 	public MultipartConfigElement multipartConfigElement() {
+
 		MultipartConfigFactory factory = new MultipartConfigFactory();
 		//单个文件最大
 		factory.setMaxFileSize("10240KB"); //KB,MB
