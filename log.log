@@ -1,0 +1,362 @@
+2018-05-23 14:27:39.770  INFO 2688 --- [main] c.e.demo.SpringbootdemoApplication       : Starting SpringbootdemoApplication on yt with PID 2688 (D:\workspace_idea_2017.1\springbootdemo\target\classes started by yt145 in D:\workspace_idea_2017.1\springbootdemo)
+2018-05-23 14:27:39.786  INFO 2688 --- [main] c.e.demo.SpringbootdemoApplication       : The following profiles are active: dev
+2018-05-23 14:27:39.909  INFO 2688 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@38467116: startup date [Wed May 23 14:27:39 CST 2018]; root of context hierarchy
+2018-05-23 14:27:42.033  INFO 2688 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2018-05-23 14:27:42.064  INFO 2688 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-23 14:27:42.064  INFO 2688 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-05-23 14:27:42.064  INFO 2688 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_92\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;E:\app\yt145\product\11.1.0\db_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_92\bin;C:\Program Files\Java\jdk1.8.0_92\jre\bin;E:\worksoftware\apache-maven-3.3.9\bin;;.]
+2018-05-23 14:27:42.259  INFO 2688 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-05-23 14:27:42.278  INFO 2688 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-23 14:27:42.279  INFO 2688 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2370 ms
+2018-05-23 14:27:42.388  INFO 2688 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-05-23 14:27:42.404  INFO 2688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-23 14:27:42.404  INFO 2688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-23 14:27:42.404  INFO 2688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-23 14:27:42.404  INFO 2688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-23 14:27:42.544  INFO 2688 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-23 14:27:42.779  INFO 2688 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@38467116: startup date [Wed May 23 14:27:39 CST 2018]; root of context hierarchy
+2018-05-23 14:27:42.854  INFO 2688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String testdemo.controller.HelloController.index(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-23 14:27:42.855  INFO 2688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String testdemo.controller.HelloController.hello()
+2018-05-23 14:27:42.855  INFO 2688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/welcome]}" onto public java.lang.String testdemo.controller.HelloController.welcome()
+2018-05-23 14:27:42.857  INFO 2688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-23 14:27:42.857  INFO 2688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-23 14:27:42.873  INFO 2688 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-23 14:27:42.873  INFO 2688 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-23 14:27:42.920  INFO 2688 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-23 14:27:43.029  INFO 2688 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-23 14:27:43.091  INFO 2688 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
+2018-05-23 14:27:43.091  INFO 2688 --- [main] c.e.demo.SpringbootdemoApplication       : Started SpringbootdemoApplication in 3.929 seconds (JVM running for 4.608)
+2018-05-23 14:27:57.963  INFO 2688 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-23 14:27:57.963  INFO 2688 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-23 14:27:57.981  INFO 2688 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-05-23 14:27:58.003  INFO 2688 --- [http-nio-8089-exec-1] testdemo.controller.HelloController      : This is an info message
+2018-05-23 14:27:58.003  WARN 2688 --- [http-nio-8089-exec-1] testdemo.controller.HelloController      : This is a warn message
+2018-05-23 14:27:58.003 ERROR 2688 --- [http-nio-8089-exec-1] testdemo.controller.HelloController      : This is an error message
+2018-05-23 14:40:41.216  INFO 8112 --- [main] c.e.demo.SpringbootdemoApplication       : Starting SpringbootdemoApplication on yt with PID 8112 (D:\workspace_idea_2017.1\springbootdemo\target\classes started by yt145 in D:\workspace_idea_2017.1\springbootdemo)
+2018-05-23 14:40:41.220  INFO 8112 --- [main] c.e.demo.SpringbootdemoApplication       : The following profiles are active: dev
+2018-05-23 14:40:41.295  INFO 8112 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5e7cd6cc: startup date [Wed May 23 14:40:41 CST 2018]; root of context hierarchy
+2018-05-23 14:40:43.276  INFO 8112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2018-05-23 14:40:43.319  INFO 8112 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-23 14:40:43.319  INFO 8112 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-05-23 14:40:43.336  INFO 8112 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_92\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;E:\app\yt145\product\11.1.0\db_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_92\bin;C:\Program Files\Java\jdk1.8.0_92\jre\bin;E:\worksoftware\apache-maven-3.3.9\bin;;.]
+2018-05-23 14:40:43.585  INFO 8112 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-05-23 14:40:43.589  INFO 8112 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-23 14:40:43.589  INFO 8112 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2295 ms
+2018-05-23 14:40:43.701  INFO 8112 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-05-23 14:40:43.701  INFO 8112 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-23 14:40:43.701  INFO 8112 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-23 14:40:43.701  INFO 8112 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-23 14:40:43.701  INFO 8112 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-23 14:40:43.817  INFO 8112 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-23 14:40:44.036  INFO 8112 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5e7cd6cc: startup date [Wed May 23 14:40:41 CST 2018]; root of context hierarchy
+2018-05-23 14:40:44.098  INFO 8112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String testdemo.controller.HelloController.index(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-23 14:40:44.098  INFO 8112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/welcome]}" onto public java.lang.String testdemo.controller.HelloController.welcome()
+2018-05-23 14:40:44.098  INFO 8112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String testdemo.controller.HelloController.hello()
+2018-05-23 14:40:44.098  INFO 8112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-23 14:40:44.098  INFO 8112 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-23 14:40:44.130  INFO 8112 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-23 14:40:44.130  INFO 8112 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-23 14:40:44.176  INFO 8112 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-23 14:40:44.290  INFO 8112 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-23 14:40:44.352  INFO 8112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
+2018-05-23 14:40:44.352  INFO 8112 --- [main] c.e.demo.SpringbootdemoApplication       : Started SpringbootdemoApplication in 3.682 seconds (JVM running for 4.402)
+2018-05-23 14:40:50.962  INFO 8112 --- [http-nio-8089-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-23 14:40:50.963  INFO 8112 --- [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-23 14:40:50.981  INFO 8112 --- [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-05-23 14:40:51.005  INFO 8112 --- [http-nio-8089-exec-2] testdemo.controller.HelloController      : This is an info message
+2018-05-23 14:40:51.006  WARN 8112 --- [http-nio-8089-exec-2] testdemo.controller.HelloController      : This is a warn message
+2018-05-23 14:40:51.006 ERROR 8112 --- [http-nio-8089-exec-2] testdemo.controller.HelloController      : This is an error message
+2018-05-23 14:48:12.957  INFO 4412 --- [main] c.e.demo.SpringbootdemoApplication       : Starting SpringbootdemoApplication on yt with PID 4412 (D:\workspace_idea_2017.1\springbootdemo\target\classes started by yt145 in D:\workspace_idea_2017.1\springbootdemo)
+2018-05-23 14:48:12.961  INFO 4412 --- [main] c.e.demo.SpringbootdemoApplication       : The following profiles are active: dev
+2018-05-23 14:48:13.039  INFO 4412 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@53fb3dab: startup date [Wed May 23 14:48:13 CST 2018]; root of context hierarchy
+2018-05-23 14:48:14.950  INFO 4412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2018-05-23 14:48:14.997  INFO 4412 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-23 14:48:14.997  INFO 4412 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-05-23 14:48:14.997  INFO 4412 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_92\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;E:\app\yt145\product\11.1.0\db_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_92\bin;C:\Program Files\Java\jdk1.8.0_92\jre\bin;E:\worksoftware\apache-maven-3.3.9\bin;;.]
+2018-05-23 14:48:15.285  INFO 4412 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-05-23 14:48:15.285  INFO 4412 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-23 14:48:15.285  INFO 4412 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2246 ms
+2018-05-23 14:48:15.399  INFO 4412 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-05-23 14:48:15.399  INFO 4412 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-23 14:48:15.399  INFO 4412 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-23 14:48:15.399  INFO 4412 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-23 14:48:15.399  INFO 4412 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-23 14:48:15.528  INFO 4412 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-23 14:48:15.717  INFO 4412 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@53fb3dab: startup date [Wed May 23 14:48:13 CST 2018]; root of context hierarchy
+2018-05-23 14:48:15.793  INFO 4412 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String testdemo.controller.HelloController.index(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-23 14:48:15.794  INFO 4412 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/welcome]}" onto public java.lang.String testdemo.controller.HelloController.welcome()
+2018-05-23 14:48:15.794  INFO 4412 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String testdemo.controller.HelloController.hello()
+2018-05-23 14:48:15.798  INFO 4412 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-23 14:48:15.799  INFO 4412 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-23 14:48:15.816  INFO 4412 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-23 14:48:15.816  INFO 4412 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-23 14:48:15.873  INFO 4412 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-23 14:48:15.965  INFO 4412 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-23 14:48:16.001  INFO 4412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
+2018-05-23 14:48:16.017  INFO 4412 --- [main] c.e.demo.SpringbootdemoApplication       : Started SpringbootdemoApplication in 3.589 seconds (JVM running for 4.248)
+2018-05-23 14:50:47.868  INFO 4412 --- [http-nio-8089-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-23 14:50:47.868  INFO 4412 --- [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-23 14:50:47.885  INFO 4412 --- [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-05-23 14:50:47.907  INFO 4412 --- [http-nio-8089-exec-2] testdemo.controller.HelloController      : This is an info message
+2018-05-23 14:50:47.907  WARN 4412 --- [http-nio-8089-exec-2] testdemo.controller.HelloController      : This is a warn message
+2018-05-23 14:50:47.907 ERROR 4412 --- [http-nio-8089-exec-2] testdemo.controller.HelloController      : This is an error message
+2018-05-23 14:55:51.021 ERROR 6780 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'logging.level' to java.util.Map<java.lang.String, java.lang.String>
+	at org.springframework.boot.context.properties.bind.Binder.handleBindError(Binder.java:250) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:226) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:210) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:166) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.setLogLevels(LoggingApplicationListener.java:307) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeFinalLoggingLevels(LoggingApplicationListener.java:290) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:238) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:200) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:173) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127) ~[spring-context-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:358) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at com.example.demo.SpringbootdemoApplication.main(SpringbootdemoApplication.java:13) [classes/:na]
+Caused by: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.Map<java.lang.String, java.lang.String>]
+	at org.springframework.core.convert.support.GenericConversionService.handleConverterNotFound(GenericConversionService.java:321) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:194) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.boot.context.properties.bind.BindConverter$CompositeConversionService.convert(BindConverter.java:162) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:96) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:88) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.properties.bind.MapBinder.bindAggregate(MapBinder.java:67) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.properties.bind.AggregateBinder.bind(AggregateBinder.java:58) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindAggregate$2(Binder.java:306) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:442) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$100(Binder.java:382) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bindAggregate(Binder.java:305) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:263) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:221) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	... 18 common frames omitted
+
+2018-05-23 14:59:07.065 ERROR 8896 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'logging.level' to java.util.Map<java.lang.String, java.lang.String>
+	at org.springframework.boot.context.properties.bind.Binder.handleBindError(Binder.java:250) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:226) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:210) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:166) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.setLogLevels(LoggingApplicationListener.java:307) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeFinalLoggingLevels(LoggingApplicationListener.java:290) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:238) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:200) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:173) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127) ~[spring-context-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:358) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at com.example.demo.SpringbootdemoApplication.main(SpringbootdemoApplication.java:13) [classes/:na]
+Caused by: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.Map<java.lang.String, java.lang.String>]
+	at org.springframework.core.convert.support.GenericConversionService.handleConverterNotFound(GenericConversionService.java:321) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:194) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.boot.context.properties.bind.BindConverter$CompositeConversionService.convert(BindConverter.java:162) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:96) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:88) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.properties.bind.MapBinder.bindAggregate(MapBinder.java:67) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.properties.bind.AggregateBinder.bind(AggregateBinder.java:58) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindAggregate$2(Binder.java:306) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:442) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$100(Binder.java:382) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bindAggregate(Binder.java:305) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:263) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:221) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	... 18 common frames omitted
+
+2018-05-23 15:00:59.040  INFO 824 --- [main] c.e.demo.SpringbootdemoApplication       : Starting SpringbootdemoApplication on yt with PID 824 (D:\workspace_idea_2017.1\springbootdemo\target\classes started by yt145 in D:\workspace_idea_2017.1\springbootdemo)
+2018-05-23 15:00:59.040  INFO 824 --- [main] c.e.demo.SpringbootdemoApplication       : The following profiles are active: dev
+2018-05-23 15:00:59.147  INFO 824 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2dfaea86: startup date [Wed May 23 15:00:59 CST 2018]; root of context hierarchy
+2018-05-23 15:01:01.199  INFO 824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2018-05-23 15:01:01.231  INFO 824 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-23 15:01:01.232  INFO 824 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-05-23 15:01:01.236  INFO 824 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_92\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;E:\app\yt145\product\11.1.0\db_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_92\bin;C:\Program Files\Java\jdk1.8.0_92\jre\bin;E:\worksoftware\apache-maven-3.3.9\bin;;.]
+2018-05-23 15:01:01.416  INFO 824 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-05-23 15:01:01.416  INFO 824 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-23 15:01:01.416  INFO 824 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2269 ms
+2018-05-23 15:01:01.543  INFO 824 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-05-23 15:01:01.543  INFO 824 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-23 15:01:01.543  INFO 824 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-23 15:01:01.543  INFO 824 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-23 15:01:01.543  INFO 824 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-23 15:01:01.765  INFO 824 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-23 15:01:01.953  INFO 824 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2dfaea86: startup date [Wed May 23 15:00:59 CST 2018]; root of context hierarchy
+2018-05-23 15:01:02.015  INFO 824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String testdemo.controller.HelloController.index(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-23 15:01:02.015  INFO 824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/welcome]}" onto public java.lang.String testdemo.controller.HelloController.welcome()
+2018-05-23 15:01:02.015  INFO 824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String testdemo.controller.HelloController.hello()
+2018-05-23 15:01:02.015  INFO 824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-23 15:01:02.015  INFO 824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-23 15:01:02.031  INFO 824 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-23 15:01:02.031  INFO 824 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-23 15:01:02.093  WARN 824 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-05-23 15:01:02.140  INFO 824 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-23 15:01:02.259  INFO 824 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-23 15:01:02.312  INFO 824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
+2018-05-23 15:01:02.317  INFO 824 --- [main] c.e.demo.SpringbootdemoApplication       : Started SpringbootdemoApplication in 3.793 seconds (JVM running for 4.422)
+2018-05-23 15:01:14.497  INFO 824 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-23 15:01:14.497  INFO 824 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-23 15:01:14.516  INFO 824 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-05-23 15:01:14.539 DEBUG 824 --- [http-nio-8089-exec-1] testdemo.controller.HelloController      : This is a debug message
+2018-05-23 15:01:14.539  INFO 824 --- [http-nio-8089-exec-1] testdemo.controller.HelloController      : This is an info message
+2018-05-23 15:01:14.539  WARN 824 --- [http-nio-8089-exec-1] testdemo.controller.HelloController      : This is a warn message
+2018-05-23 15:01:14.540 ERROR 824 --- [http-nio-8089-exec-1] testdemo.controller.HelloController      : This is an error message
+2018-05-23 15:01:14.743 ERROR 824 --- [http-nio-8089-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8089-exec-1] Exception processing template "second/welcome": Error resolving template "second/welcome", template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template "second/welcome", template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:870) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) [thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) [thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354) [thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187) [thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) [spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) [spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) [spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) [spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) [spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) [spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) [spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_92]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_92]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_92]
+
+2018-05-23 15:01:14.756 ERROR 824 --- [http-nio-8089-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template "second/welcome", template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template "second/welcome", template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:870) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_92]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_92]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_92]
+
+2018-05-23 15:02:54.575  INFO 9488 --- [main] c.e.demo.SpringbootdemoApplication       : Starting SpringbootdemoApplication on yt with PID 9488 (D:\workspace_idea_2017.1\springbootdemo\target\classes started by yt145 in D:\workspace_idea_2017.1\springbootdemo)
+2018-05-23 15:02:54.580  INFO 9488 --- [main] c.e.demo.SpringbootdemoApplication       : The following profiles are active: dev
+2018-05-23 15:02:54.750  INFO 9488 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4681c175: startup date [Wed May 23 15:02:54 CST 2018]; root of context hierarchy
+2018-05-23 15:02:56.885  INFO 9488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2018-05-23 15:02:56.947  INFO 9488 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-23 15:02:56.947  INFO 9488 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-05-23 15:02:56.947  INFO 9488 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_92\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;E:\app\yt145\product\11.1.0\db_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_92\bin;C:\Program Files\Java\jdk1.8.0_92\jre\bin;E:\worksoftware\apache-maven-3.3.9\bin;;.]
+2018-05-23 15:02:57.181  INFO 9488 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-05-23 15:02:57.197  INFO 9488 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-23 15:02:57.197  INFO 9488 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2447 ms
+2018-05-23 15:02:57.329  INFO 9488 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-05-23 15:02:57.330  INFO 9488 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-23 15:02:57.330  INFO 9488 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-23 15:02:57.330  INFO 9488 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-23 15:02:57.330  INFO 9488 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-23 15:02:57.440  INFO 9488 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-23 15:02:57.643  INFO 9488 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4681c175: startup date [Wed May 23 15:02:54 CST 2018]; root of context hierarchy
+2018-05-23 15:02:57.705  INFO 9488 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index]}" onto public java.lang.String testdemo.controller.HelloController.index(java.util.Map<java.lang.String, java.lang.Object>)
+2018-05-23 15:02:57.705  INFO 9488 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/welcome]}" onto public java.lang.String testdemo.controller.HelloController.welcome()
+2018-05-23 15:02:57.705  INFO 9488 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String testdemo.controller.HelloController.hello()
+2018-05-23 15:02:57.705  INFO 9488 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-23 15:02:57.705  INFO 9488 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-23 15:02:57.737  INFO 9488 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-23 15:02:57.737  INFO 9488 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-23 15:02:57.783  INFO 9488 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-05-23 15:02:57.877  INFO 9488 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-23 15:02:57.924  INFO 9488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
+2018-05-23 15:02:57.924  INFO 9488 --- [main] c.e.demo.SpringbootdemoApplication       : Started SpringbootdemoApplication in 4.057 seconds (JVM running for 5.092)
+2018-05-23 15:03:11.684  INFO 9488 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-23 15:03:11.684  INFO 9488 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-23 15:03:11.701  INFO 9488 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-05-23 15:03:11.728  INFO 9488 --- [http-nio-8089-exec-1] testdemo.controller.HelloController      : This is an info message
+2018-05-23 15:03:11.728  WARN 9488 --- [http-nio-8089-exec-1] testdemo.controller.HelloController      : This is a warn message
+2018-05-23 15:03:11.728 ERROR 9488 --- [http-nio-8089-exec-1] testdemo.controller.HelloController      : This is an error message
