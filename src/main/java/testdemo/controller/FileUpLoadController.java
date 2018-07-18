@@ -17,31 +17,31 @@ import java.util.List;
 public class FileUpLoadController {
 
     @RequestMapping("file")
-    public String file(){
+    public String file() {
         return "second/file";
     }
+
     @RequestMapping("multifile")
-    public String multifile(){
+    public String multifile() {
         return "second/multifile";
     }
 
     /**
      * 文件上传具体实现方法;
-     *
      */
     @RequestMapping("/upload")
     @ResponseBody
-    public String handleFileUpload(@RequestParam("file") MultipartFile file,HttpServletRequest request) {
-        String name=file.getOriginalFilename();
+    public String handleFileUpload(@RequestParam("file") MultipartFile file, HttpServletRequest request) {
+        String name = file.getOriginalFilename();
         String filePath = request.getSession().getServletContext().getRealPath("upload/");
         if (!file.isEmpty()) {
             try {
                 File targetFile = new File(filePath);
-                if(!targetFile.exists()){
+                if (!targetFile.exists()) {
                     targetFile.mkdirs();
                 }
 
-                FileOutputStream out = new FileOutputStream(filePath+name);
+                FileOutputStream out = new FileOutputStream(filePath + name);
                 out.write(file.getBytes());
                 out.flush();
                 out.close();
@@ -61,13 +61,13 @@ public class FileUpLoadController {
     @RequestMapping(value = "/batch/upload", method = RequestMethod.POST)
     @ResponseBody
     public String handleFileUpload(HttpServletRequest request) {
-        MultipartHttpServletRequest params=((MultipartHttpServletRequest) request);
+        MultipartHttpServletRequest params = ((MultipartHttpServletRequest) request);
         List<MultipartFile> files = ((MultipartHttpServletRequest) request)
                 .getFiles("file");
-        String name=params.getParameter("name");
-        System.out.println("name:"+name);
-        String id=params.getParameter("id");
-        System.out.println("id:"+id);
+        String name = params.getParameter("name");
+        System.out.println("name:" + name);
+        String id = params.getParameter("id");
+        System.out.println("id:" + id);
         MultipartFile file = null;
         BufferedOutputStream stream = null;
         for (int i = 0; i < files.size(); ++i) {
@@ -91,6 +91,7 @@ public class FileUpLoadController {
         }
         return "upload successful";
     }
+
     /*
     * 文件下载
     * */
