@@ -32,7 +32,7 @@ public class HelloController {
         logger.debug("Spring Boot中默认配置ERROR、WARN和INFO级别的日志输出到控制台");
         logger.info("This is an info message");
         logger.warn("This is a warn message");
-        logger.error("This is an error message");
+        logger.error("This is an error message!");
         return "second/welcome";
     }
 
